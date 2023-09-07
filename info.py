@@ -43,8 +43,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Srmoviezbot:Srmoviezbot@cluster0.46rgafa.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Bisal") #don't change the name if you are using the database already
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rsmoviezbot:<Rsmoviezbot>@cluster0.uqrc0ga.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Rsmoviez Bot") #don't change the name if you are using the database already
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
