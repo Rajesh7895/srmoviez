@@ -101,12 +101,12 @@ async def pm_text(bot, message):
     if user_id in ADMINS:
         return  # ignore admins
     await message.reply_text(
-        text=f"<b>Nᴀᴍᴀsᴛʜᴇ {message.from_user.mention} Jɪ 😍 ,\n\nI Wᴏʀᴋ Oɴʟʏ Iɴ Gʀᴏᴜᴘs\nsᴇᴀʀᴄʜ ʜᴇʀᴇ 👇🏻</b>",
+        text=f"<b>HELLO {message.from_user.mention} Jɪ 😍 ,\n\nI Wᴏʀᴋ Oɴʟʏ Iɴ Gʀᴏᴜᴘs\nsᴇᴀʀᴄʜ ʜᴇʀᴇ 👇🏻</b>",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ 😊", url=f"https://t.me/mm_rr_movi"
+                        "ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ 😊", url=f"https://t.me/pcmoviedemand"
                     )
                 ]
             ]
@@ -459,7 +459,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
     remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
     if settings["button"]:
-        cap = f"<b>Nᴀᴍᴀsᴛᴇ {query.from_user.mention} ᴊɪ🥰,\nFᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\nɪɴ {remaining_seconds} sᴇᴄᴏɴᴅs 😊\n</b>"
+        cap = f"<b>HELLO {query.from_user.mention} 🥰,\nFᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\nɪɴ {remaining_seconds} sᴇᴄᴏɴᴅs 😊\n</b>"
     else:
         # cap = f"<b>Hᴇʏ {query.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
         cap = f"<b>Hᴇʏ {query.from_user.mention},Fᴏᴜɴᴅ Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
