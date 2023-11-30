@@ -48,12 +48,12 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Parshu") #don't change the name if
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', "True"))
+VERIFY = bool(environ.get('VERIFY', "false"))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'zxlink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '7c4b5bcc3e51c6a712100ecdd7886dcd9d712875')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'zxlink.in')
 SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '7c4b5bcc3e51c6a712100ecdd7886dcd9d712875')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', "False"))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', "true"))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001949687694').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "15")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
