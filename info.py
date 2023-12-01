@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Parshu") #don't change the name if
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', "false"))
+VERIFY = bool(environ.get('VERIFY', 'false'))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'zxlink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '7c4b5bcc3e51c6a712100ecdd7886dcd9d712875')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'zxlink.in')
